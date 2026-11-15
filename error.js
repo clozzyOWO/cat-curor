@@ -90,6 +90,7 @@
     buildFittedCursor(hoverCursorURL, targetSize)
   ]).then(([fittedNormal, fittedHover]) => {
     const style = document.createElement("style");
+style.id = "catCursorMod";
     style.textContent = `
       html, body, * {
         cursor: url("${fittedNormal}") 1 1, auto !important;
